@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <Navigation />
+      <Route path='/:type/:id'><PetDetailsPage /></Route>
       <Route path='/:type?'><HomePage /></Route>
     </Router>
   );
