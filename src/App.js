@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <Route path='/:type'><HomePage /></Route>
+      <Route path='/:type?'><HomePage /></Route>
     </Router>
   );
 }
