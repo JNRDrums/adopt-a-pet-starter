@@ -17,13 +17,9 @@ const Search = () => {
       name: searchInputRef.current.value
     }).toString();
 
-    const name = searchQuery.get('name')
-
-    if (!name) {
-      return undefined;
-    }
     // imperatively redirect with history.push()
-    history.push(`/search?name=${name}`)
+    history.push(`/search?${searchQuery}`)
+    
   };
 
   return (
